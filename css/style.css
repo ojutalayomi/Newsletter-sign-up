@@ -1,0 +1,86 @@
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark_Slate_Grey: hsl(234, 29%, 20%);
+    --Charcoal_Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+@font-face {
+    font-family: theFont;
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+body{
+    background: var(--Dark_Slate_Grey);
+    color: var(--White);
+    font-family: theFont;
+}
+.main{
+    align-items: center;
+    background: var(--White);
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    display: flex;
+    height: 609px;
+    justify-content: center;
+    margin: 50px auto;
+    width: 888px;
+}
+@media (max-width: 992px){
+    .main{
+        width: 300px;
+        height: 400px;
+    }
+}
+.sign-up-form{
+    color: var(--Dark_Slate_Grey);
+    width: 50%;
+}
+.sign-up-img{
+    background: url(/assets/images/illustration-sign-up-desktop.svg) no-repeat;
+    background-size: contain;
+    height: 95%;
+    width: 400px;
+}
+.content{
+    padding: 30px;
+}
+.content h1{
+    margin: 40px 0;
+}
+.content h4{
+    margin: 10px 0;
+}
+.content-info img{
+    width: 20px;
+}
+.content-info div{
+    align-items: center;
+    display: flex;
+}
+#email{
+    border: 2px solid var(--Grey);
+    border-radius: 10px;
+    height: 53px;
+    outline: none;
+    width: 359px;
+}
+#form div{
+    margin-bottom: 20px;
+}
+label{
+    font-size: small;
+}
+button[form=form]{
+    background: var(--Dark_Slate_Grey);
+    border: none;
+    border-radius: 10px;
+    color: var(--White);
+    height: 53px;
+    outline: none;
+    width: 359px;
+}
