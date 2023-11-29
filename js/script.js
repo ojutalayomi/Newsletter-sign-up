@@ -15,10 +15,10 @@ function isValidEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
-setInterval(function() {
+
 button[0].addEventListener("click", function() {
 
-    
+setInterval(function() {    
     if(isValidEmail(email.value)){
         bold.innerText = email.value;
         email.classList.remove("error");
@@ -40,6 +40,7 @@ button[0].addEventListener("click", function() {
             main.style.display = "flex";
         }
     }
+}, 10000)
 });
 
 button[1].addEventListener("click", function() {
@@ -63,7 +64,7 @@ form.addEventListener("keydown", function(e) {
         button[0].click();
     }
 });
-}, 1000);
+;
 
 setInterval(function() {
     if (window.innerWidth >= 768) {
