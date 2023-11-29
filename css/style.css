@@ -251,7 +251,7 @@ label span{
         margin-top: -43px;
     }
 }
-@media (max-width: 767px) and (min-width: 360px){
+@media (max-width: 767px) and (min-width: 380px){
     /* Styles for tablets and small desktops */
     /**.main {
         height: auto;
