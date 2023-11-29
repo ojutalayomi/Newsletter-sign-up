@@ -18,7 +18,7 @@ function isValidEmail(email) {
 
 button[0].addEventListener("click", function() {
 
-setInterval(function() {    
+//setInterval(function() {    
     if(isValidEmail(email.value)){
         bold.innerText = email.value;
         email.classList.remove("error");
@@ -40,7 +40,7 @@ setInterval(function() {
             main.style.display = "flex";
         }
     }
-}, 10000)
+//}, 10000)
 });
 
 button[1].addEventListener("click", function() {
@@ -57,7 +57,7 @@ button[1].addEventListener("click", function() {
 });
 
 form.addEventListener("keydown", function(e) {
-    if (e.keyCode === 13) { // 13 is the key code for the Enter key
+    if (e.key === "Enter") { // 13 is the key code for the Enter key
         e.preventDefault(); // Prevent the default action (form submission)
 
         // Trigger the click event on the submit button
