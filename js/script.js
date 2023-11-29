@@ -1,3 +1,4 @@
+var bold = document.querySelector("b");
 var button = document.querySelectorAll(".button");
 var div = document.querySelectorAll("div");
 var email = document.getElementById("email");
@@ -42,6 +43,7 @@ button[0].addEventListener("click", function() {
 
 button[1].addEventListener("click", function() {
     email.classList.remove("error");
+    email.value = "";
     erroR.style.display = "none";
     message.style.display = "none";
 
