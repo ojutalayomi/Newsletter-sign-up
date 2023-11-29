@@ -20,6 +20,7 @@ button[0].addEventListener("click", function() {
 
     
     if(isValidEmail(email.value)){
+        bold.innerText = email.value;
         email.classList.remove("error");
         erroR.style.display = "none";
         message.style.display = "block";
