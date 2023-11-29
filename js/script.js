@@ -57,7 +57,7 @@ button[1].addEventListener("click", function() {
 });
 
 form.addEventListener("keydown", function(e) {
-    if (e.key === "Enter") { // 13 is the key code for the Enter key
+    if (e.key === "Enter") { // key code for the Enter key
         e.preventDefault(); // Prevent the default action (form submission)
 
         // Trigger the click event on the submit button
