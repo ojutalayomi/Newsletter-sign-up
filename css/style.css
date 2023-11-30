@@ -12,7 +12,7 @@
 }
 @font-face {
     font-family: theFont;
-    src: url(/assets/fonts/Roboto-Regular.ttf);
+    src: url(/Newsletter-sign-up/assets/fonts/Roboto-Regular.ttf);
 }
 body{
     background: var(--Dark_Slate_Grey);
@@ -54,7 +54,7 @@ body{
         width: auto !important;
     }
     .sign-up-img{
-        background: url(/assets/images/illustration-sign-up-mobile.svg) !important;
+        background: url(/Newsletter-sign-up/assets/images/illustration-sign-up-mobile.svg) !important;
         background-repeat-y: no-repeat !important;
         background-size: contain !important;
         height: 284px !important;
@@ -150,7 +150,7 @@ b{
     width: 50%;
 }
 .sign-up-img{
-    background: url(/assets/images/illustration-sign-up-desktop.svg) no-repeat;
+    background: url(/Newsletter-sign-up/assets/images/illustration-sign-up-desktop.svg) no-repeat;
     background-size: contain;
     height: 90%;
     margin-right: -40px;
