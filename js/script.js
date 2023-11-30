@@ -40,7 +40,7 @@ button[0].addEventListener("click", function() {
             main.style.display = "flex";
         }
     }
-//}, 10000)
+ //   }, 10000);
 });
 
 button[1].addEventListener("click", function() {
@@ -57,21 +57,21 @@ button[1].addEventListener("click", function() {
 });
 
 form.addEventListener("keydown", function(e) {
-    if (e.key === "Enter") { // key code for the Enter key
+    if (e.key === "Enter") {
         e.preventDefault(); // Prevent the default action (form submission)
 
         // Trigger the click event on the submit button
         button[0].click();
     }
 });
-;
+
 
 setInterval(function() {
     if (window.innerWidth >= 768) {
         div[2].className = "sign-up-img";
         div[3].classList.remove("sign-up-img");
     } else {
-        div[2].className = "img-content";
+        div[2].className = "img-content *";
         div[3].classList.add("sign-up-img");
     }
 }, 1000); // 1000 milliseconds = 1 second
