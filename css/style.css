@@ -12,7 +12,7 @@
 }
 @font-face {
     font-family: theFont;
-    src: url(/Newsletter-sign-up/assets/fonts/Roboto-Regular.ttf);
+    src: url(/assets/fonts/Roboto-Regular.ttf);
 }
 body{
     background: var(--Dark_Slate_Grey);
@@ -54,11 +54,12 @@ body{
         width: auto !important;
     }
     .sign-up-img{
-        background: url(/Newsletter-sign-up/assets/images/illustration-sign-up-mobile.svg) no-repeat !important;
+        background: url(/assets/images/illustration-sign-up-mobile.svg) !important;
+        background-repeat-y: no-repeat !important;
         background-size: contain !important;
         height: 284px !important;
         margin-right: 0px !important;
-        width: 375px !important;
+        width: 100% !important;
     }
     .sme{
         width: 100% !important;
@@ -100,6 +101,7 @@ body{
         bottom: 76px;
         padding: 0 32px !important;
         position: absolute;
+        width: 100%;
     }
     .attribution{
         margin-top: -41px !important;
@@ -148,7 +150,7 @@ b{
     width: 50%;
 }
 .sign-up-img{
-    background: url(/Newsletter-sign-up/assets/images/illustration-sign-up-desktop.svg) no-repeat;
+    background: url(/assets/images/illustration-sign-up-desktop.svg) no-repeat;
     background-size: contain;
     height: 90%;
     margin-right: -40px;
@@ -261,10 +263,10 @@ label span{
         box-shadow: none !important;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
-        height: 97px;
+        height: 262px;
         overflow: hidden;
     }
-    .sign-up-img{
+    sign-up-img{
         background-repeat: inherit !important;
         background-size: contain;
         margin-right: 0px;
@@ -274,4 +276,11 @@ label span{
         margin-top: 0 !important;
     }
 }
-
+@media (max-height: 841px) {
+    .img-content{
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        height: 170px;
+        overflow: hidden;
+    }
+}
