@@ -236,10 +236,12 @@ label span{
     box-shadow: 0px 25px 20px -20px var(--Tomato);
     cursor: pointer;
 }
-.attribution { 
+.attribution {
+    bottom: 0 !important;
     font-family: theFont;
     font-size: 15px; 
-    text-align: center; 
+    text-align: center;
+    position: relative;  
 }
 .attribution a { 
     color:var(--Tomato);
@@ -247,11 +249,6 @@ label span{
 }
 .attribution a:hover {
     text-decoration: underline;
-}
-@media (min-height: 700px) {
-    .attribution{
-        margin-top: -43px;
-    }
 }
 @media (max-width: 767px) and (min-width: 380px){
     /* Styles for tablets and small desktops */
@@ -273,7 +270,8 @@ label span{
         width: 100% !important;
     }
     .attribution{
-        margin-top: 0 !important;
+        bottom: 0 !important;
+        position: relative;
     }
 }
 @media (max-height: 841px) {
