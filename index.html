@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <div>
+  <div role="main">
     <div class="main">
       <div class="img-content">
         <div class="sign-up-img"></div>
@@ -26,26 +26,26 @@
 
           <div class="content-info"> 
             <div class="content-list">
-              <img src="/Newsletter-sign-up/assets/images/icon-list.svg">
+              <img alt="An Icon List Image" src="/Newsletter-sign-up/assets/images/icon-list.svg">
               <h4> Product discovery and building what matters</h4>
             </div>   
             <div class="content-list">
-              <img src="/Newsletter-sign-up/assets/images/icon-list.svg">
+              <img alt="An Icon List Image" src="/Newsletter-sign-up/assets/images/icon-list.svg">
               <h4> Measuring to ensure updates are a success</h4>
             </div>
             <div class="content-list">
-              <img src="/Newsletter-sign-up/assets/images/icon-list.svg">    
+              <img alt="An Icon List Image" src="/Newsletter-sign-up/assets/images/icon-list.svg">    
               <h4> And much more!</h4>
             </div>
           </div>
 
-          <form class="sign-up-Form" id="form">
+          <form class="sign-up-Form" id="form" role="form">
             <div>
-              <label for="email"><p>Email address</p> <span class="erro-r">Valid email required</span></label><br>
+              <label for="email"><span>Email address</span> <span class="erro-r">Valid email required</span></label><br>
               <input type="email" class="email sme" id="email" placeholder="email@company.com">
             </div>
-            <div>
-              <div class="button sme" formtarget="_top">Subscribe to monthly newsletter</div>
+            <div role="button">
+              <div class="button sme">Subscribe to monthly newsletter</div>
             </div>
           </form>
           <!-- Sign-up form end -->
@@ -57,7 +57,7 @@
     <div class="success-message" data-wow-delay="0.1s">
       <div>
       <div class="success-message-content">
-        <img src="/Newsletter-sign-up/assets/images/icon-success.svg">
+        <img alt="An Icon Succes Image" src="/Newsletter-sign-up/assets/images/icon-success.svg">
         <h1>Thanks for subscribing!</h1>
         <h4>A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
           Please open it and click the div inside to confirm your subscription.</h4>
@@ -69,7 +69,7 @@
     </div>
     <!-- Success message end -->
   </div>
-  <div class="attribution">
+  <div class="attribution" role="contentinfo">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.ayocodex.site">Ayomide Ojutalayo</a>.
   </div>
