@@ -55,7 +55,6 @@ body{
     }
     .sign-up-img{
         background: url(/Newsletter-sign-up/assets/images/illustration-sign-up-mobile.svg) !important;
-        background-repeat-y: no-repeat !important;
         background-size: cover !important;
         height: 284px !important;
         margin-right: 0px !important;
@@ -295,5 +294,10 @@ label span{
     }
     body{
         overflow: auto !important;
+    }
+}
+@media (max-height: 667px){
+    .img-content {
+    height: 100px;
     }
 }
