@@ -75,3 +75,7 @@ setInterval(function() {
         div[3].classList.add("sign-up-img");
     }
 }, 1000); // 1000 milliseconds = 1 second
+
+setTimeout(function() {
+    document.querySelector('.success-message div').classList.add('show');
+}, 1000); // Delay in milliseconds

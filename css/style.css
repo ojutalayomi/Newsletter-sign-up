@@ -118,6 +118,13 @@ body{
     margin: 110px auto;
     width: 491px;
 }
+.success-message div{
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 .success-message button{
     align-self: center;
 }
