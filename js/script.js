@@ -18,7 +18,7 @@ function isValidEmail(email) {
 
 button[0].addEventListener("click", function() {
 
-//setInterval(function() {    
+setInterval(function() {    
     if(isValidEmail(email.value)){
         bold.innerText = email.value;
         email.classList.remove("error");
@@ -40,7 +40,7 @@ button[0].addEventListener("click", function() {
             main.style.display = "flex";
         }
     }
- //   }, 10000);
+    }, 500);
 });
 
 button[1].addEventListener("click", function() {

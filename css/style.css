@@ -73,8 +73,8 @@ body{
     .content-list img {
         margin-bottom: 14px;
     }
-    label{
-        width: 309px !important;
+    .label{
+        /**width: 309px !important;**/
     }
     .button{
         box-shadow: none !important;
@@ -204,29 +204,30 @@ b{
     font-size: small;
     padding-left: 5px;
 }
-#form div{
+#form .form-content{
     margin-bottom: 20px;
 }
-label{
+.label{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 359px;
+    max-width: 359px;
 }
-label div{
+.label .eml{
     color: var(--Dark_Slate_Grey);
     font-size: small;
     font-weight: bold;
     margin-top: 28px;
     margin-bottom: -8px !important;
 }
-label span{
+.label .erro-r{
     color: hsla(0, 100%, 50%, 0.796);
     display: none;
     font-size: small;
     font-weight: bold;
     margin-top: 28px;
     margin-bottom: -8px;
+    text-align: end;
 }
 .button{
     background: var(--Dark_Slate_Grey);
