@@ -1,6 +1,7 @@
 var bold = document.querySelector("b");
 var button = document.querySelectorAll(".button");
 var div = document.querySelectorAll("div");
+var divv = document.querySelector(".divv");
 var email = document.getElementById("email");
 var erroR = document.querySelector(".erro-r");
 var form = document.querySelector("form");
@@ -27,6 +28,9 @@ button[0].addEventListener("click", function() {
         loader.classList.add("show");
         loader.style.display ="flex";
         message.style.display = "block";
+        setTimeout(function() {
+        divv.style.display = "block";
+        }, 5000);
         main.style.display = "none";
     } else {
         email.classList.add("error");

@@ -119,9 +119,9 @@ body{
     .content-list img {
         margin-bottom: 14px;
     }
-    .label{
-        /**width: 309px !important;**/
-    }
+    /**.label{
+        width: 309px !important;
+    }**/
     .button{
         box-shadow: none !important;
         cursor: none;
@@ -164,7 +164,7 @@ body{
     width: 491px;
 }
 .success-message .divv{
-    animation: fadeIn 10s;
+    animation: fadeIn 1s;
 }
 @keyframes fadeIn {
     0% {opacity: 0;}
@@ -354,5 +354,13 @@ b{
     }
     .attribution{
         position: relative;
+    }
+}
+@media (min-width: 431px){
+    #loader{
+        border-radius: 20px;
+        height: 484px !important;
+        margin: 110px auto !important;
+        width: 491px;
     }
 }
