@@ -213,12 +213,12 @@ label{
     justify-content: space-between;
     width: 359px;
 }
-label p{
+label div{
     color: var(--Dark_Slate_Grey);
     font-size: small;
     font-weight: bold;
     margin-top: 28px;
-    margin-bottom: -8px;
+    margin-bottom: -8px !important;
 }
 label span{
     color: hsla(0, 100%, 50%, 0.796);
