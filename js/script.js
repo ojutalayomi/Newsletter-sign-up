@@ -5,6 +5,7 @@ var email = document.getElementById("email");
 var erroR = document.querySelector(".erro-r");
 var form = document.querySelector("form");
 var imgContent = document.querySelector(".i");
+var loader = document.getElementById("loader");
 var main = document.querySelector(".main");
 var message = document.querySelector(".success-message");
 
@@ -18,11 +19,13 @@ function isValidEmail(email) {
 
 button[0].addEventListener("click", function() {
 
-setInterval(function() {    
+//setInterval(function() {    
     if(isValidEmail(email.value)){
         bold.innerText = email.value;
         email.classList.remove("error");
         erroR.style.display = "none";
+        loader.classList.add("show");
+        loader.style.display ="flex";
         message.style.display = "block";
         main.style.display = "none";
     } else {
@@ -34,13 +37,22 @@ setInterval(function() {
             erroR.innerHTML = "Valid email required";
         }
         message.style.display = "none";
-        if(window.innerWidth < 768){
-            main.style.display = "block";
-        } else {
-            main.style.display = "flex";
+        window.onresize = function() {
+            if(window.innerWidth <= 431){
+                main.style.display = "block";
+            } else {
+                main.style.display = "flex";
+            }
         }
     }
-    }, 500);
+
+    setTimeout(function() {
+        if(message.style.display ="block"){
+        loader.classList.remove("show");
+        loader.style.display ="none";
+        }
+    }, 6000);
+//    }, 500);
 });
 
 button[1].addEventListener("click", function() {
@@ -76,6 +88,8 @@ setInterval(function() {
     }
 }, 1000); // 1000 milliseconds = 1 second
 
-setTimeout(function() {
+
+ 
+/**setTimeout(function() {
     document.querySelector('.success-message div').classList.add('show');
-}, 1000); // Delay in milliseconds
+}, 1000);**/ // Delay in milliseconds
