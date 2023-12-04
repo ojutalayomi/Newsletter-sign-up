@@ -51,7 +51,7 @@ button[0].addEventListener("click", function() {
     }
 
     setTimeout(function() {
-        if(message.style.display ="block"){
+        if(message.style.display === "block"){
         loader.classList.remove("show");
         loader.style.display ="none";
         }
